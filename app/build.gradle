@@ -11,8 +11,8 @@ android {
         applicationId package_name
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode versionCode
-        versionName "${versionName}"
+        versionCode Integer.parseInt(beeVersionCode)
+        versionName "${beeVersionName}"
     }
 
     buildTypes {
