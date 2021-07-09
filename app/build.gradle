@@ -15,6 +15,15 @@ android {
         versionName "${beeVersionName}"
     }
 
+    signingConfigs {
+        config {
+            keyAlias '${releaseKeyAlias}'
+            keyPassword '${releaseKeyPassword}'
+            storeFile file('sign/${releaseStoreFileName}')
+            storePassword '${releaseStorePassword}'
+        }
+    }
+
     buildTypes {
         debug {
             resValue "string", "app_name", "${getAppName()}"
@@ -43,15 +52,6 @@ android {
 
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-
-    signingConfigs {
-        config {
-            keyAlias '${releaseKeyAlias}'
-            keyPassword '${releaseKeyPassword}'
-            storeFile file('sign/${releaseStoreFileName}')
-            storePassword '${releaseStorePassword}'
-        }
     }
 
     compileOptions.encoding = "UTF-8"
