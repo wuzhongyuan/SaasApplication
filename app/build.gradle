@@ -17,10 +17,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias '${releaseKeyAlias}'
-            keyPassword '${releaseKeyPassword}'
+            keyAlias "${releaseKeyAlias}"
+            keyPassword "${releaseKeyPassword}"
             storeFile file("../${releaseStoreFileName}")
-            storePassword '${releaseStorePassword}'
+            storePassword "${releaseStorePassword}"
         }
     }
 
