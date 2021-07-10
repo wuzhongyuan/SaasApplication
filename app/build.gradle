@@ -32,6 +32,7 @@ android {
             manifestPlaceholders = [
                     package_name : "${package_name}",
             ]
+            signingConfig signingConfigs.config
         }
 
         release {
