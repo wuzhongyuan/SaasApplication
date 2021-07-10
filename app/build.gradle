@@ -19,7 +19,7 @@ android {
         config {
             keyAlias '${releaseKeyAlias}'
             keyPassword '${releaseKeyPassword}'
-            storeFile file('sign/${releaseStoreFileName}')
+            storeFile file('${releaseStoreFileName}')
             storePassword '${releaseStorePassword}'
         }
     }
