@@ -19,7 +19,7 @@ android {
         config {
             keyAlias '${releaseKeyAlias}'
             keyPassword '${releaseKeyPassword}'
-            storeFile file('../${releaseStoreFileName}')
+            storeFile file("../${releaseStoreFileName}")
             storePassword '${releaseStorePassword}'
         }
     }
