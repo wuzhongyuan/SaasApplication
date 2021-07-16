@@ -66,7 +66,7 @@ android {
         def path = ((project.name != "app") ? project.name : rootProject.name.replace(" ","")) + "_" +
                 variant.buildType.name + "_"+
                 variant.versionName + "_" +
-                today.format('yyyyMMddhhmm') +
+                today.format('yyyyMMddhhmm', TimeZone.getTimeZone("GMT+08:00")) +
                 ".apk"
 
         variant.outputs.all {
