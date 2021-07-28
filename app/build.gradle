@@ -43,6 +43,14 @@ android {
                     package_name : "${package_name}",
             ]
             signingConfig signingConfigs.config
+            //极光
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME : "${JPUSH_PKGNAME}",
+                    JPUSH_APPKEY  : "${JPUSH_APPKEY}", //JPush 上注册的包名对应的 Appkey. 测试
+                    JPUSH_CHANNEL : "${JPUSH_CHANNEL}", //暂时填写默认值即可.
+                    XIAOMI_APPID  : "${XIAOMI_APPID}",
+                    XIAOMI_APPKEY : "${XIAOMI_APPKEY}"
+            ]
         }
     }
 
